@@ -1,0 +1,19 @@
+ALGORITHM Sum_Array
+VAR
+    i,NB_Voyels:INTEGER:=0;
+   NB_Words:INTEGER:=1;
+   "this is my new t-shirt"
+BEGIN
+    Write("type the sentence str")
+    Read(str)
+    WHILE (str[i]<>".") DO
+    IF (str[i]=" ") THEN
+        NB_Words:=NB_Words+1
+    END_IF
+
+    i:=i+1
+    END_WHILE
+    Write("the number of voyels :",NB_Voyels)
+    Write("the number of words",NB_Words)
+    Write("the length of the sentence :",i)
+END
